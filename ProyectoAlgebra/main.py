@@ -15,27 +15,28 @@ import UNIDAD4.PIU
 import UNIDAD4.regresion
 import UNIDAD4.regresionmultilineal
 import UNIDAD4.regresiónlineal
-import UNIDAD5.derivadalimite
-import UNIDAD5.derivadaparcialdifadelante
-import UNIDAD5.Ecuacióndifusión
-import UNIDAD5.rectangulosint
-import UNIDAD5.rectangulovolumen
-import UNIDAD5.simpson1int
-import UNIDAD5.simpson1volumen
-import UNIDAD5.simpson2int
-import UNIDAD5.trapeciovolumen
-import UNIDAD5.trapecioint
-import UNIDAD6.Ecuacióndifusión
-import UNIDAD6.eccalor
-import UNIDAD6.eccalor3d
-import UNIDAD6.ecdiferencialeslaplace
-import UNIDAD6.heaviside
-import UNIDAD6.Heun
-import UNIDAD6.laplace2024
-import UNIDAD6.ode2024
-import UNIDAD6.rungekutta42204
-import UNIDAD6.Sistecdif
-import UNIDAD6.sistecdif2023
+
+import UNIDAD5.derivadalimite as derlim
+import UNIDAD5.derivadaparcialdifadelante as derivpardelante
+import UNIDAD5.Ecuacióndifusión as ecdif
+import UNIDAD5.rectangulosint as rectintegr
+import UNIDAD5.rectangulovolumen as rectvol
+import UNIDAD5.simpson1int as simp1int
+import UNIDAD5.simpson1volumen as simpson1vol
+import UNIDAD5.simpson2int as simpson2int
+import UNIDAD5.trapeciovolumen as trapVol
+import UNIDAD5.trapecioint as trapint
+
+import UNIDAD6.eccalor as eCcalor
+import UNIDAD6.eccalor3d as Ec3d
+import UNIDAD6.ecdiferencialeslaplace as eclaplace
+import UNIDAD6.heaviside as hvside
+import UNIDAD6.Heun as heun
+import UNIDAD6.laplace2024 as laplace24
+import UNIDAD6.ode2024 as ode24
+import UNIDAD6.rungekutta42204 as rungkut
+import UNIDAD6.Sistecdif as sistecdif
+import UNIDAD6.sistecdif2023 as sistecdf23
 
 print("Bienvenido a la terminal del programa")
 casoUnidad = int(input("Que unidad quiere inicializar?: "))
