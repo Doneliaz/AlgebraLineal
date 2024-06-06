@@ -61,8 +61,9 @@ def SwitchUnidades(casoUnidad):
             def Switch_Caso_1(casoMetodo):
                 match casoMetodo:
                     case 1:
-                        
+                        UNIDAD1.metgrafico2024.f()
                     case 2: 
+                        UNIDAD1.newtonraph2024.f()
                         
             break))
         case 3:
