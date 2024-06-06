@@ -70,6 +70,7 @@ def SwitchUnidades(casoUnidad):
             casoMetodo = int(input("Introduzca el metodo a utilizar: 1. para creamer, 2. GaussJordam, 3. GaussSeinel, 4. GaussSimple, 5. Jacobi, 6. Lu, 7. QR "))
             while casoMetodo != 1 or 2 or 3 or 4 or 5 or 6 or 7:
                 casoMetodo = int(input("Solo existen siete metodos, por favor seleccione una opcion valida"))
+                 def Switch_Caso_3(casoMetodo):
                 match casoMetodo:
                     case 1:
                         UNIDAD3.cramer.f()
@@ -89,6 +90,7 @@ def SwitchUnidades(casoUnidad):
             casoMetodo = int(input("Introduzca el metodo a utilizar: 1. Lagrange, 2. Newtonpol, 3. PIU, 4. Regresion, 5. Regresion multilineal, 6. Regresion Lineal "))
             while casoMetodo != 1 or 2 or 3 or 4 or 5 or 6:
                 casoMetodo = int(input("Solo existen seis metodos, por favor seleccione una opcion valida"))
+                 def Switch_Caso_4(casoMetodo):
                 match casoMetodo:
                     case 1:
                         UNIDAD4.lagrange.f()
