@@ -68,4 +68,58 @@ def SwitchUnidades(casoUnidad):
             casoMetodo = int(input("Introduzca el metodo a utilizar: 1. para "))
         case 4:
         case 5:
+            casoMetodo = int(input("Introduce el numero de la funcion a ejecutar: 1.DerivadaLimite 2. DerivadaParcial 3. Ecuacion de Difusion  4. Integracion por rectangulos 5. Rectangulo Volumen 6. Metodo Simpson 1/3 7. Metodo Simpson 1/3 (volumen) 8. Simpson 3/8 9. Integracion por Trapecio 10. Integracion por trapecio volumen "))
+            while casoMetodo != 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10:
+                casoMetodo = int(input("Por favor Ingrese un numero perteneciente al indice: "))
+
+            def Switch_Caso_5(casoMetodo):
+                match casoMetodo:
+                    case 1:
+                        derlim.DerivadaLimite()
+                    case 2:
+                        derivpardelante.DerivadaParcial()
+                    case 3:
+                        ecdif.EcuacionDifusion()
+                    case 4:
+                        rectintegr.IntegracionRect()
+                    case 5:
+                        rectvol.RecVol()
+                    case 6:
+                        simp1int.simpson1()
+                    case 7:
+                        simpson1vol.simpson1vol()
+                    case 8:
+                        simpson2int.simpson2()
+                    case 9:
+                        trapint.integracionTrap()
+                    case 10:
+                        trapVol.IntTrapVol()
+
         case 6:
+            casoMetodo = int(input("Introduce el numero de la funcion a ejecutar: 1.EcuacionCalor 2. EcuacionCalor3D 3. Diferenciales de Laplace  4. Heaviside 5. Heun 6. laplace 7. ode 8. Rungekutta 9. SistemaDeEcuacionesDiferenciales 10. SistemaDeEcuacionesDiferenciales2023"))
+            while casoMetodo != 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10:
+                casoMetodo = int(input("Por favor Ingrese un numero perteneciente al indice: "))
+            def Switch_Caso_6(casoMetodo):
+                match casoMetodo:
+                    case 1:
+                        eCcalor.FuncionCalor()
+                    case 2:
+                        Ec3d.eccalor3d()
+                    case 3:
+                        eclaplace.difLaplace()
+                    case 4:
+                        hvside.Heavyside
+                    case 5:
+                        heun.heun
+                    case 6:
+                        laplace24.laplace
+                    case 7:
+                        ode24.ode24()
+                    case 8:
+                        rungkut.rungekutta()
+                    case 9:
+                        sistecdif.Sistedif()
+                    case 10:
+                        sistecdf23.sisdif23()
+
+
