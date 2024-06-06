@@ -66,8 +66,41 @@ def SwitchUnidades(casoUnidad):
                         
             break))
         case 3:
-            casoMetodo = int(input("Introduzca el metodo a utilizar: 1. para "))
+            casoMetodo = int(input("Introduzca el metodo a utilizar: 1. para creamer, 2. GaussJordam, 3. GaussSeinel, 4. GaussSimple, 5. Jacobi, 6. Lu, 7. QR "))
+            while casoMetodo != 1 or 2 or 3 or 4 or 5 or 6 or 7:
+                casoMetodo = int(input("Solo existen siete metodos, por favor seleccione una opcion valida"))
+                match casoMetodo:
+                    case 1:
+                        UNIDAD3.cramer.f()
+                    case 2:
+                        UNIDAD3.GaussJordan.f()
+                    case 3:
+                        UNIDAD3.GaussSeidel.f()
+                    case 4:
+                        UNIDAD3.GaussSimple.f()
+                    case 5:
+                        UNIDAD3.Jacobi.f()
+                    case 6:
+                        UNIDAD3.LU.f()
+                    case 7:
+                        UNIDAD3.QR.f()
         case 4:
+            casoMetodo = int(input("Introduzca el metodo a utilizar: 1. Lagrange, 2. Newtonpol, 3. PIU, 4. Regresion, 5. Regresion multilineal, 6. Regresion Lineal "))
+            while casoMetodo != 1 or 2 or 3 or 4 or 5 or 6:
+                casoMetodo = int(input("Solo existen seis metodos, por favor seleccione una opcion valida"))
+                match casoMetodo:
+                    case 1:
+                        UNIDAD4.lagrange.f()
+                    case 2:
+                        UNIDAD4.newtonpol.f()
+                    case 3:
+                        UNIDAD4.PIU.f()
+                    case 4:
+                        UNIDAD4.regresion.f()
+                    case 5:
+                        UNIDAD4.regresionmultilineal.f()
+                    case 6:
+                        UNIDAD4.regresiónlineal.f()
         case 5:
             casoMetodo = int(input("Introduce el numero de la funcion a ejecutar: 1.DerivadaLimite 2. DerivadaParcial 3. Ecuacion de Difusion  4. Integracion por rectangulos 5. Rectangulo Volumen 6. Metodo Simpson 1/3 7. Metodo Simpson 1/3 (volumen) 8. Simpson 3/8 9. Integracion por Trapecio 10. Integracion por trapecio volumen "))
             while casoMetodo != 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10:
